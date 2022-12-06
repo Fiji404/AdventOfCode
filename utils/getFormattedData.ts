@@ -5,3 +5,7 @@ export function getFormattedData(path: string) {
         .split('\n')
         .map(str => str.trim());
 }
+
+export function getRawData(path: string) {
+    return readFileSync(path, 'utf-8')
+}
