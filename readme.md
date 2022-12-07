@@ -8,6 +8,7 @@ My solutions for [Advent Of Code 2022](https://adventofcode.com/) event
 |  1  |    Calorie Counting     | ⭐ | ⭐ |
 |  2  |   Rock Paper Scissors   | ⭐ | ⭐ |
 |  3  | Rucksack Reorganization | ⭐ | ⭐ |
-|  4  |      Camp Cleanup]      | ⭐ | ⭐ |
+|  4  |      Camp Cleanup       | ⭐ | ⭐ |
 |  5  |      Supply Stacks      | ⭐ | ⭐ |
-|  6  |      Tuning Trouble      | ⭐ | ⭐ |
+|  6  |      Tuning Trouble     | ⭐ | ⭐ |
+|  6  | No Space Left On Device | ❌ | ❌ |

@@ -1,9 +1,8 @@
-import { getRawData } from '../../utils/getFormattedData';
+import { getRawData } from '../../utils';
 import { uniq } from 'lodash';
 
 const dataStreamBufferCharacters: [string, number][] = [];
-const charactersProcessAmount = { by4Characters: 0, by14Characters: 0 };
-const computeProcessAmountForFirstMarker = (charAmount: number, amountOfUniqueChars: string, arr: string[]) => {
+const computeProcessAmountForFirstMarker = (charAmount: number, partName: string, arr: string[]) => {
     for (const [idxOfStartingChar, _] of [...arr.entries()]) {
         for (const [idx, char] of [...arr.entries()].slice(idxOfStartingChar)) {
             if (dataStreamBufferCharacters.length === charAmount) {
@@ -12,16 +11,13 @@ const computeProcessAmountForFirstMarker = (charAmount: number, amountOfUniqueCh
                     dataStreamBufferCharacters.splice(0);
                     break;
                 }
-                charactersProcessAmount[amountOfUniqueChars] = dataStreamBufferCharacters.at(-1)[1] + 1;
+                console.log(partName, dataStreamBufferCharacters.at(-1)[1] + 1);
             }
             dataStreamBufferCharacters.push([char, idx]);
         }
     }
-    dataStreamBufferCharacters.splice(0)
+    dataStreamBufferCharacters.splice(0);
 };
 
-computeProcessAmountForFirstMarker(4, 'by4Characters', getRawData('./input.txt').split(''))
-computeProcessAmountForFirstMarker(14, 'by14Characters', getRawData('./input.txt').split(''));
-
-console.log(charactersProcessAmount.by4Characters);
-console.log(charactersProcessAmount.by14Characters);
+computeProcessAmountForFirstMarker(4, 'PART 1:', getRawData('./input.txt').split(''));
+computeProcessAmountForFirstMarker(14, 'PART 2:', getRawData('./input.txt').split(''));

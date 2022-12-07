@@ -1,8 +1,6 @@
-const listItems = require('node:fs')
-    .readFileSync('./data.txt', 'utf-8')
-    .split('\n')
-    .map(str => str.trim());
+import { getFormattedData } from "../../utils";
 
+const listItems = getFormattedData('./input.txt')
 const alphabet = [...'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 const compartments = listItems.map(list => [list.slice(0, list.length / 2), list.slice(list.length / 2)]);
 
