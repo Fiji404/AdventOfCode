@@ -3,6 +3,14 @@ My solutions for [Advent Of Code 2022](https://adventofcode.com/) event
 
 ## Event statistics
 
+
+# 2015
+| Day |            Quest             | Part 1 | Part 2 |
+| :-: | :--------------------------: | :----: | :----: |
+|  1  |    Not Quite Lisp     | ⭐ | ⭐ |
+
+
+# 2022
 | Day |            Quest             | Part 1 | Part 2 |
 | :-: | :--------------------------: | :----: | :----: |
 |  1  |    Calorie Counting     | ⭐ | ⭐ |

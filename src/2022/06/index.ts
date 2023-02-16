@@ -1,4 +1,4 @@
-import { getRawData } from '../../utils';
+import { getRawData } from '../../../utils/utils';
 import { uniq } from 'lodash';
 
 const dataStreamBufferCharacters: [string, number][] = [];

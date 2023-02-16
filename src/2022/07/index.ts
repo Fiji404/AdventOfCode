@@ -1,4 +1,4 @@
-import { getFormattedData } from '../../utils';
+import { getFormattedData } from '../../../utils/utils';
 
 const fileSystemTree = {};
 

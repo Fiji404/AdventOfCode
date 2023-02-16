@@ -1,5 +1,5 @@
-import { getFormattedData } from '../../utils';
-import { cloneDeep } from 'lodash';
+import { getFormattedData } from '../../../utils/utils';
+// import { cloneDeep } from 'lodash';
 
 const rearrangementCommands = getFormattedData('./input.txt');
 const CREATE_STACKS_1 = [
@@ -13,7 +13,7 @@ const CREATE_STACKS_1 = [
     ['Q', 'H', 'Z', 'R', 'V', 'J', 'N', 'D'],
     ['S', 'M', 'H', 'N', 'B'],
 ];
-const CREATE_STACKS_2 = cloneDeep(CREATE_STACKS_1);
+const CREATE_STACKS_2 = structuredClone(CREATE_STACKS_1);
 
 const rearrangeCreates = (sourceStackIdx: number, destStackIdx: number, numberOfRearrangements: number, arr: string[][]) => {
     const sourceStack = arr[sourceStackIdx];

@@ -1,4 +1,4 @@
-import { getFormattedData } from "../../utils"
+import { getFormattedData } from "../../../utils/utils"
 
 const treesMap = getFormattedData('./input.txt').map(treesRow => treesRow.split('').map(Number));
 console.log(treesMap);

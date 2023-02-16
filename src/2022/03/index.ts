@@ -1,4 +1,4 @@
-import { getFormattedData } from "../../utils";
+import { getFormattedData } from "../../../utils/utils";
 
 const compartmentGroup: string[] = []
 const compartmentsListBy3Groups: string[][] = getFormattedData('./input.txt').reduce((compartmentGroups, compartment) => {

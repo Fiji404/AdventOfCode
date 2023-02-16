@@ -1,4 +1,4 @@
-import { getFormattedData } from "../../utils";
+import { getFormattedData } from "../../../utils/utils";
 
 const sectionAssigmentsPairs = getFormattedData('./input.txt');
 const separatedSectionAssignments = sectionAssigmentsPairs.map(assignment =>
