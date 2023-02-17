@@ -1,4 +1,4 @@
-import { getFormattedData } from '../../utils/utils';
+import { getFormattedData } from '../../utils/index';
 
 const FINAL_STATISTICS = [...getFormattedData('./input.txt')[0]].reduce(
     (acc, instruction, i) => {

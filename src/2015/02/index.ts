@@ -1,4 +1,4 @@
-import { getFormattedData } from "../../utils/utils";
+import { getFormattedData } from "../../utils/index";
 
 const PAPER_NEEDED = getFormattedData('./input.txt').reduce((acc, dimensions) => {
     const [l, w, h] = dimensions.split('x').map(d => +d);

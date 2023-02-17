@@ -1,7 +1,7 @@
-import { getFormattedData } from '../../../utils/utils';
+import { getData } from '../../utils/index';
 
 const personCalories: number[] = []
-const caloriesListByEachPerson = getFormattedData('./input.txt').reduce((calories, calorie): number[] => {
+const caloriesListByEachPerson = getData('./input.txt').reduce((calories, calorie): number[] => {
     if (!calorie) return calories.push(personCalories.reduce((acc, calorie) => acc + calorie, 0)) && personCalories.splice(0) && calories;
     return personCalories.push(+calorie) && calories
 }, [])
