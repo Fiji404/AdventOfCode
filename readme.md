@@ -8,6 +8,9 @@ My solutions for [Advent Of Code 2022](https://adventofcode.com/) event
 | Day |            Quest             | Part 1 | Part 2 |
 | :-: | :--------------------------: | :----: | :----: |
 |  1  |    Not Quite Lisp     | ⭐ | ⭐ |
+|  2  |    I Was Told There Would Be No Math     | ⭐ | ⭐ |
+|  3  |    Perfectly Spherical Houses in a Vacuum     | ⭐ | ⭐ |
+|  4  |    The Ideal Stocking Stuffer     | ⭐ | ⭐ |
 
 
 # 2022
